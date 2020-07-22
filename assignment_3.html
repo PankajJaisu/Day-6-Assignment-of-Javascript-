@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 Assignment 3</title>
+<style>
+.mystyle{
+   background-color:white;}
+</style>
+</head>
+<body>
+<h1 id='h11' style="color: aqua;"></h1>
+<h3 id='timei' style="color: aqua;"></h3>
+<button onclick="fun1()">Dark Web</button>
+</body>
+<Script>
+    inp=prompt('Enter your Name')
+document.getElementById('h11').innerText=`Welcome ${inp}`
+function ti()
+{
+
+let date =new Date()
+
+ let time=date.toLocaleTimeString()
+ document.getElementById('timei').innerText=time
+   
+}
+setInterval(ti,1000)
+function fun1()
+{
+    //document.body.style.backgroundColor='Black'
+    var element = document.body.style.backgroundColor='Black'
+   element.classList.toggle("mystyle");
+}
+
+</Script>
+</html>
